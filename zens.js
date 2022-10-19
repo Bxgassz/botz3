@@ -2909,19 +2909,19 @@ let alfamart = `628111500959@s.whatsapp.net`
             break
             case 'menu': {
                goblok = fs.readFileSync('./sound/menu.mp3')
-zens.sendMessage(m.chat, {audio: goblok, mimetype:'audio/mpeg', ptt:true }, {quoted:m})}
+zens.sendMessage(m.chat, {audio: goblok, mimetype:'audio/mpeg', ptt:false }, {quoted:m})}
 {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let jawab = `*${ucapanWaktu}*
-╭──❏「 𝐈𝐍𝐅𝐎 𝐔𝐒𝐄𝐑 」❏*
+╭──❏「 *INFO USER* 」❏*
 ├ *Nama* : ${pushname}
 ├ *Number* : @${me.split('@')[0]}
 ├ *Premium* : ${isPremium ? '✅' : `❌`}
 ├ *Limit* : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 ╰──❏
 
-╭──❏「 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 」❏
+╭──❏「 *BOT INFO* 」❏
 ├ *Nama Bot* : ${pushname}
 ├ *Powered* : @${ini_mark.split('@')[0]}
 ├ *Owner* : @${ownernya.split('@')[0]}
@@ -2929,7 +2929,7 @@ zens.sendMessage(m.chat, {audio: goblok, mimetype:'audio/mpeg', ptt:true }, {quo
 ├ *Prefix* :「 MULTI-PREFIX 」
 ╰──❏
 
-╭──❏「 𝐈𝐍𝐃𝐎𝐍𝐄𝐒𝐈𝐀 𝐓𝐈𝐌𝐄 」❏
+╭──❏「 *INDONESIA TIME* 」❏
 ├ *Hari Ini* : ${hariini}
 ├ *Wib* : ${barat} WIB
 ├ *Wita* : ${tengah} WITA
@@ -3381,7 +3381,7 @@ oner = `┌──⭓ *Owner Menu*
 │⭔ ${prefix}setmenu [option]
 │
 └───────𖦹Ꜥꜥ`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '⌕ List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '⌕ Donasi' }, type: 1 }]
+let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
             await zens.sendButtonText(m.chat, buttons, oner, nyoutube, m, {quoted: fkontak})
             }
             break
@@ -3693,8 +3693,8 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 │⭔ ${prefix}setmenu [option]
 │
 └───────𖦹Ꜥꜥ
-_Support kami_\n_Dengan Cara Berdonasi_`
-                let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '⌕ Donasi' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '⌕ Rules' }, type: 1 }]
+_Fitur sedang dikembangkan_\n_Yang ytta ytta ajh_`
+                let buttons = [{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: 'Rules' }, type: 1 }]
             await zens.sendButtonText(m.chat, buttons, anu, nyoutube, m, {mentions: ments, quoted: fkontak})
             }
             break
